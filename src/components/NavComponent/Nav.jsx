@@ -9,6 +9,21 @@ const inknut = Inknut_Antiqua({display:"swap",subsets:["latin"],weight:["500"]})
 const opensans = Open_Sans({display:"swap",subsets:["latin"],weight:["500","700"]})
 
 
+function checkIfActive(link,pathname){
+  // return pathname===link?true:false
+  //check if the path is the same as the link or ends with the link 
+  //if its blog and the path is /blog or /blog/anything then return true
+  if(/\/blog\/.*/.test(pathname)&&link==="/blog"){
+    return true
+  }
+  if(pathname===link||pathname.endsWith(link)){
+    return true
+  }else{
+    return false
+  }
+
+}
+
 
 function makeListOfLinks(links,pathname,platform){
 return  (
@@ -16,16 +31,13 @@ return  (
 {links.map((link,index)=>{//map through  (loop over) the links and create a list item with a link (same as an a tag but better) for each
   return <li key={index} title={link.title} className={styles.listItem}><Link   //set the path to the link in state
   className={[
-    styles.linkelm, link.link===pathname?styles.active:"", //add the active class if the link is the current path
+    styles.linkelm, checkIfActive(link.link,pathname)?styles.active:"", //add the active class if the link is the current path
     opensans.className
   ].join(" ")} href={link.link} aria-label={link.title} >{link.name}</Link></li>
 })}
 </ul>
 )
 }
-
-
-
 
 
 
