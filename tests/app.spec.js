@@ -1,6 +1,13 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
+/*
+
+the test in this file are for the app itself, not a specific page or component
+to make it easier to test the app, we have an array of endpoints that we can loop through and test each one
+the endpoints array has the path and some data that we want to test for each endpoint
+
+*/
 
 let endpoints = [
 {
