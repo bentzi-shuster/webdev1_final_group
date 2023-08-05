@@ -7,7 +7,7 @@ import Footer from '@/components/FooterComponent/Footer'
 
 export const metadata = {
   title: 'Cats and Coffee',
-  description: 'A blog about cats and coffee.',
+  description: 'This is a cat cafe with that has coffee.',
 }
 
 export default function RootLayout({ children }) {
