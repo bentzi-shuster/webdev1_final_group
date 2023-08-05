@@ -35,9 +35,11 @@ let navLinks=[  // set up an array of objects with the name of the link, the lin
 {"name":"About","link":"/about","title":"About page for Cats and Coffee"},
 {"name":"Blog","link":"/blog","title":"Blog page for Cats and Coffee"},
 ]
+
+for (let link of navLinks) {
 // check that the nav menu links go to the right page
-test('nav menu links go to the right page', async ({ page }) => {
-    for (let link of navLinks) {
+test('nav menu link for '+link.name+' goes to '+link.title, async ({ page }) => {
+    
         await page.goto(link.link);
         let linktext = await page.locator(`nav > ul a:has-text("${link.name}")`);
         await linktext.waitFor({ state: 'visible' });
@@ -46,5 +48,6 @@ test('nav menu links go to the right page', async ({ page }) => {
         // check that the text on the link is correct
         await expect(page.locator('nav > ul a:has-text("'+link.name+'")')).toHaveText(link.name);
         await expect(page.locator('nav > details > ul a:has-text("'+link.name+'")')).toHaveText(link.name);
-    }
+   
 });
+ }
