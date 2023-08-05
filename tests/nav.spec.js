@@ -39,6 +39,7 @@ let navLinks=[  // set up an array of objects with the name of the link, the lin
 test('nav menu links go to the right page', async ({ page }) => {
     for (let link of navLinks) {
         await page.goto(link.link);
+        await page.waitForURL(link.link);
         let linktext = await page.locator(`nav > ul a:has-text("${link.name}")`);
         await linktext.waitFor({ state: 'visible' });
         await linktext.click();
