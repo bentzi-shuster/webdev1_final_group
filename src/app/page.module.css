@@ -1,0 +1,157 @@
+.hero{
+min-height: 66vh;
+/* fixed parallax background */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url("/blurbg.png");
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 2rem;
+padding-bottom: 0;
+}
+
+.title{
+font-size: 2rem;
+color: white;
+background-color: #703C0D;
+padding: 1.5rem 2rem;
+border-radius: 1rem;
+text-align: center;
+}
+
+.catsOnaTable{
+
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.catsOnaTable .table{
+    width: 50%;   
+}
+.catsOnaTable .cat1{
+    width: 15%;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+}
+.catsOnaTable .cat2{
+    width: 15%;
+    position: absolute;
+    top: -30%;
+    left: 40%;
+}
+
+
+
+.blurb{
+    background-color: #EBE1D6;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blurbtext,.formtitle{
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem;
+    color: #703C0D;
+}
+
+.visit{
+    background-color: #DBAB7E;
+    color: #000000;
+    padding: 1rem 2rem;
+    border-radius: 9px;
+    margin: 2rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid #A16E3F;
+}
+.visit:hover{
+    background-color: #A16E3F;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+}
+.formform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    min-width: 30%;
+    max-width: 60%;
+    margin: 0 auto;
+}
+.formform input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1em;
+    border: 1px solid#757575 ;
+    background-color:rgba(0, 0, 0, 0.05) ;
+}
+.formform button{
+    min-width: 20%;
+    max-width: 50%;
+    align-self: flex-end;
+    padding:.5em 1em;
+    border-radius: .5em;
+    border: 2px #703C0D solid;
+    background-color:#A16E3F ;
+    color: white;
+}
+.formform button:hover{
+    background-color:#703C0D ;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and  (max-width: 768px){
+    .hero{
+        min-height: 50vh;
+    }
+    .blurbtext{
+        font-size: 1.5rem;
+    }
+    .blurb{
+        min-height: 20vh;
+    }
+    .catsOnaTable .table{
+        width: 100%;   
+    }
+    .catsOnaTable .cat1{
+        width: 30%;
+        position: absolute;
+        top: -40%;
+        left: 50%;
+    }
+    .catsOnaTable .cat2{
+        width: 30%;
+        position: absolute;
+        top: -30%;
+        left: 40%;
+    }
+    .formform{
+        min-width: 80%;
+        max-width: 80%;
+    }
+    .formform button{
+        min-width: 50%;
+        max-width: 100%;
+    }    
+    .title{
+        font-size: 1rem;
+        margin-bottom: 5rem;
+        
+    }
+}
