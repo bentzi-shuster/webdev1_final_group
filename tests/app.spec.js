@@ -29,7 +29,7 @@ let endpoints = [
 
 },
 {
-  path:"/blog/1",
+  path:"/blog/test",
   title:"Cats and Coffee",
   description:"This is a cat cafe with that has coffee.",
 

@@ -1,0 +1,22 @@
+.title{
+    text-align: center;
+}
+
+.textbody{
+    margin: 0 auto;
+    width: 60%;
+}
+@media screen and (max-width: 768px){
+    .textbody{
+        width: 90%;
+    }
+}
+
+
+.back{
+    position: fixed;
+    top: 6em;
+    left: 3em;
+    z-index: 100;
+    color: #000000;
+}
