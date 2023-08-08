@@ -5,4 +5,34 @@ div.aboutdiv {
     margin: 20px;
   };
 
+  .aboutdiv {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
   
+  .aboutdiv h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .aboutdiv h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .aboutdiv p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .aboutdiv a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .aboutdiv a:hover {
+    text-decoration: underline;
+  }
