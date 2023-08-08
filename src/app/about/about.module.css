@@ -1,0 +1,61 @@
+/* Import font and apply to the entire document */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+/* Styling for the about page */
+.aboutdiv {
+  font-family: 'Inknut Antiqua', sans-serif;
+  /* Rest of your styles */
+}
+/* Styling for the about page */
+.aboutdiv {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inknut Antiqua', sans-serif;
+  line-height: 1.6;
+}
+
+.aboutdiv h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #703C0D;
+}
+
+.aboutdiv h3 {
+  text-align:center;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.aboutdiv p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.aboutdiv a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.aboutdiv a:hover {
+  text-decoration: underline;
+}
+
+/* Address and contact details */
+.aboutdiv h3 + p {
+  margin-top: 5px;
+}
+
+/* Social media links */
+.aboutdiv a + a {
+  margin-left: 10px;
+}
+.aboutdiv section{
+ max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 3px solid #DBAB7E;
+  border-radius: 5px;
+}
