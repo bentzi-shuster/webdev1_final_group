@@ -1,0 +1,39 @@
+.post{
+    border-radius: 5px;
+    border: 3px solid #DBAB7E;
+    background: rgba(85, 47, 12, 0.20);
+}
+
+.link{
+    text-decoration: none;
+    color: #000000;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background: #bf9268;
+    padding: 5px 10px;
+    align-items: center;
+    border-radius: 3px 3px 0 0;
+   }
+.shortdescription{
+   text-indent: 10px;
+   font-size: 14px;
+   min-height: 100px;
+   padding: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

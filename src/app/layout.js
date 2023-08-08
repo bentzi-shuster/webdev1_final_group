@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={""}>
         <Nav />
-        {children}
+        <div style={{minHeight: "60vh"}}>
+        {children}          
+        </div>
         <Footer />
         </body>
     </html>
