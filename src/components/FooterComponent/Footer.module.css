@@ -1,0 +1,35 @@
+/* footer styles */
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #EBE1D6;
+    align-items: center;
+    color: #552F0C;
+    font-size: 22px;
+}
+.footer span{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    padding-left: 2em;
+padding-top: 2em;
+}
+.footer div h4{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+.footer div p, .footer div a{
+    color: #000;
+font-size: 12px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+display: block;
+padding: 1em 0;
+}
