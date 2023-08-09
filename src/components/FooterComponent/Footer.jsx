@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Footer.module.css'
 import {Inknut_Antiqua, Open_Sans} from 'next/font/google'
 import Image from 'next/image'
+import Link from 'next/link'
 const inknut = Inknut_Antiqua({display:"swap",subsets:["latin"],weight:["500"]})
 const opensans = Open_Sans({display:"swap",subsets:["latin"],weight:["500","700"]})
 const Footer = () => {
@@ -28,7 +29,9 @@ const Footer = () => {
    <p className={opensans.className} >  Mon -Fri 10:00 am - 8:00 pm</p>
    <p className={opensans.className} >Sat  12:00 pm - 5:00 pm</p>
     </div>
-
+<Link className={[styles.priv,opensans.className].join(" ")} href="/privacy.html">
+Privacy Policy
+</Link>
 
 </footer>
   )

@@ -8,6 +8,7 @@
     align-items: center;
     color: #552F0C;
     font-size: 22px;
+    position: relative;
 }
 .footer span{
     flex-direction: row;
@@ -32,4 +33,14 @@ font-weight: 400;
 line-height: normal;
 display: block;
 padding: 1em 0;
+}
+.priv{
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    font-size: 12px;
+    text-decoration: none;
+    /* italic */
+    font-style: italic;
+    color: #000;
 }
