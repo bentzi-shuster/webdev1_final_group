@@ -8,9 +8,31 @@ import Script from 'next/script'
 
 export const metadata = {
   title: 'Cats and Coffee',
-  description: 'This is a cat cafe with that has coffee.',
+  description: 'Cats and Coffee is a cat cafe based in Newark NJ',
+  openGraph: {
+    title: 'Cats and Coffee',
+    description: 'Cats and Coffee is a cat cafe based in Newark NJ',
+    image: 'https://webdev1-final-group.vercel.app/cat1.png',
+    url: 'https://webdev1-final-group.vercel.app/',
+    type: 'website',
+  },
+  authors: [{ name: 'Benjamin Shuster'}, {name: 'Nelson Zhou'},{name:"Ian Santucci"}],
+  applicationName: 'Cats and Coffee',
+  keywords: ['Cats and Coffee', 'Cats', 'Coffee', 'Cat Cafe', 'Newark', 'NJ'],
+  twitter: {
+    card: 'summary_large_image',
+    url: 'https://webdev1-final-group.vercel.app/',
+    title: 'Cats and Coffee',
+    description: 'Cats and Coffee is a cat cafe based in Newark NJ',
+    image: 'https://webdev1-final-group.vercel.app/cat1.png',
+  },
+  themeColor: '#ebe1d6',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
 }
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
