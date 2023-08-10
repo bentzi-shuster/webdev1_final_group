@@ -2,7 +2,10 @@
 import React from 'react'
 import styles from "./about.module.css"
 import { Inknut_Antiqua } from 'next/font/google'
-
+export const metadata = {
+  title: 'Cats and Coffee | About',
+  description: 'About Cats and Coffee',
+}
 
 const About = () => {
   return (

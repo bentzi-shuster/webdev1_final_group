@@ -2,6 +2,10 @@ import styles from './page.module.css'
 import {Inknut_Antiqua, Open_Sans} from 'next/font/google'
 const inknut = Inknut_Antiqua({display:"swap",subsets:["latin"],weight:["500"]})
 const opensans = Open_Sans({display:"swap",subsets:["latin"],weight:["500","700"]})
+export const metadata = {
+  title: 'Cats and Coffee | Home',
+  description: 'Cats and Coffee Home Page',
+}
 export default function Home() {
   return (
     <>

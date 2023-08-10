@@ -6,6 +6,10 @@ import {Inknut_Antiqua, Open_Sans} from 'next/font/google'
 const inknut = Inknut_Antiqua({display:"swap",subsets:["latin"],weight:["500"]})
 const opensans = Open_Sans({display:"swap",subsets:["latin"],weight:["500","700"]})
 let data = getAllPostsData()
+export const metadata = {
+  title: 'Cats and Coffee | Blog',
+  description: 'Cats and Coffee Blog',
+}
 const Blog = () => {
   return (
     <>
