@@ -8,30 +8,33 @@ to make it easier to test the app, we have an array of endpoints that we can loo
 the endpoints array has the path and some data that we want to test for each endpoint
 
 */
-
+export const metadata = {
+  title: 'Cats and Coffee | Home',
+  description: 'Cats and Coffee Home Page',
+}
 let endpoints = [
 {
   path:"/",
-  title:"Cats and Coffee",
-  description:"This is a cat cafe with that has coffee.",
+  title:"Cats and Coffee | Home",
+  description:"Cats and Coffee Home Page",
 
 },
 {
   path:"/about",
-  title:"Cats and Coffee",
-  description:"This is a cat cafe with that has coffee.",
+  title:"Cats and Coffee | About",
+  description:"About Cats and Coffee",
 
 },
 {
   path:"/blog",
-  title:"Cats and Coffee",
-  description:"This is a cat cafe with that has coffee.",
+  title:"Cats and Coffee | Blog",
+  description:"Cats and Coffee Blog",
 
 },
 {
   path:"/blog/test",
   title:"Cats and Coffee",
-  description:"This is a cat cafe with that has coffee.",
+  description:"Cats and Coffee is a cat cafe based in Newark NJ",
 
 }
 ]

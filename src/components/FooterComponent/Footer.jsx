@@ -21,12 +21,12 @@ const Footer = () => {
     </div>
     <div className="contact">
         <h4 className={opensans.className}>Contact</h4>
-        <a className={opensans.className} href="#">12345667891</a>
-        <a className={opensans.className} href="#">cats@njit.edu</a>
+        <a className={opensans.className} href="tel:12345667891">12345667891</a>
+        <a className={opensans.className} href="mailto:cats@njit.edu?subject=Hello%20From%20the%20Website">cats@njit.edu</a>
     </div>
     <div className="hours">
    <h4 className={opensans.className}>Hours</h4>     
-   <p className={opensans.className} >  Mon -Fri 10:00 am - 8:00 pm</p>
+   <p className={opensans.className} >Mon -Fri 10:00 am - 8:00 pm</p>
    <p className={opensans.className} >Sat  12:00 pm - 5:00 pm</p>
     </div>
 <Link className={[styles.priv,opensans.className].join(" ")} href="/privacy.html">
